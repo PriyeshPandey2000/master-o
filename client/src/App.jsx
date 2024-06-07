@@ -18,14 +18,14 @@ const App = () => {
 
     useEffect(() => {
         const fetchPoints = async () => {
-            const result = await axios.get('http://localhost:5000/api/game/points');
+            const result = await axios.get('hhttps://vercel.com/priyeshpandey2000s-projects/master-o-ou/api/game/points');
             setPlayerPoints(result.data.playerPoints);
         };
         fetchPoints();
     }, []);
 
     const handleRollDice = async () => {
-        const result = await axios.post('http://localhost:5000/api/game/roll', { betAmount, betType });
+        const result = await axios.post('https://vercel.com/priyeshpandey2000s-projects/master-o-ou/api/game/roll', { betAmount, betType });
         setDie1(result.data.die1);
         setDie2(result.data.die2);
         setTotal(result.data.total);
