@@ -5,7 +5,7 @@ const BetForm = ({ betAmount, betType, setBetAmount, setBetType }) => {
     return (
         <Grid container spacing={3} className="p-4 ">
             <Grid item xs={12} sm={6} className="mb-4 sm:mb-0" style={{ marginBottom: '20px' }}>
-                <FormControl fullWidth variant="outlined" style={{ backgroundColor: '#c2c2d6', borderRadius: '8px', border: '2px solid black' }}>
+                <FormControl fullWidth variant="outlined" style={{ backgroundColor: '#d1d1e0', borderRadius: '8px', border: '2px solid black' }}>
                     <InputLabel style={{ fontSize: '1.25rem', color: 'black',transform: 'translateY(-28px)' }}>Bet Amount</InputLabel>
                     <Select
                         value={betAmount}
@@ -21,7 +21,7 @@ const BetForm = ({ betAmount, betType, setBetAmount, setBetType }) => {
             </Grid>
             
             <Grid item xs={12} sm={6} style={{ marginTop: '15px' }}>
-                <FormControl fullWidth variant="outlined" style={{ backgroundColor: '#c2c2d6', borderRadius: '8px', border: '2px solid black' }}>
+                <FormControl fullWidth variant="outlined" style={{ backgroundColor: '#d1d1e0', borderRadius: '8px', border: '2px solid black' }}>
                     <InputLabel style={{ fontSize: '1.25rem', color: 'black',transform: 'translateY(-30px)' }}>Bet Type</InputLabel>
                     <Select
                         value={betType}
