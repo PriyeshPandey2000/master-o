@@ -18,7 +18,7 @@ const App = () => {
 
     useEffect(() => {
         const fetchPoints = async () => {
-            const result = await axios.get('hhttps://vercel.com/priyeshpandey2000s-projects/master-o-ou/api/game/points');
+            const result = await axios.get('https://vercel.com/priyeshpandey2000s-projects/master-o-ou/api/game/points');
             setPlayerPoints(result.data.playerPoints);
         };
         fetchPoints();
