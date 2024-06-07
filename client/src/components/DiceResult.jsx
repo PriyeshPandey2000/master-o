@@ -8,7 +8,7 @@ const DiceResult = ({ die1, die2, total }) => {
     const diceImage2 = '/dice.png'; // Placeholder URL for die 2
 
     return (
-        <div className="p-4 bg-gray-100 rounded-lg shadow-lg mt-5">
+        <div className="p-4 bg-[#c2c2d6] rounded-lg shadow-lg mt-5">
             <div className="grid grid-cols-3 gap-4">
                 <div className="flex justify-center items-center flex-col">
                     <img src={diceImage1} alt="Die 1" style={{ maxWidth: '50%', borderRadius: '8px' }} />
