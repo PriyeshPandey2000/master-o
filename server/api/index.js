@@ -7,7 +7,9 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
-    origin: 'https://master-o-client.vercel.app'  
+    origin: 'https://master-o-client.vercel.app' ,
+    credentials: true,
+methods: ['GET','POST','HEAD','PUT','PATCH','DELETE'], 
 }
 
 ));
