@@ -1,20 +1,28 @@
 import React from 'react';
-import { Typography, Grid } from '@mui/material';
 
 const DiceResult = ({ die1, die2, total }) => {
     if (die1 === null || die2 === null) return null;
+
+    // Placeholder images for dice
+    const diceImage1 = '/dice.png'; // Placeholder URL for die 1
+    const diceImage2 = '/dice.png'; // Placeholder URL for die 2
+
     return (
-        <Grid container spacing={3} style={{ marginTop: '20px' }}>
-            <Grid item xs={4}>
-                <Typography variant="h5">Die 1: {die1}</Typography>
-            </Grid>
-            <Grid item xs={4}>
-                <Typography variant="h5">Die 2: {die2}</Typography>
-            </Grid>
-            <Grid item xs={4}>
-                <Typography variant="h5">Total: {total}</Typography>
-            </Grid>
-        </Grid>
+        <div className="p-4 bg-gray-100 rounded-lg shadow-lg mt-5">
+            <div className="grid grid-cols-3 gap-4">
+                <div className="flex justify-center items-center flex-col">
+                    <img src={diceImage1} alt="Die 1" style={{ maxWidth: '50%', borderRadius: '8px' }} />
+                    <span className="font-semibold text-red-600 mt-2">{die1}</span>
+                </div>
+                <div className="flex justify-center items-center flex-col">
+                    <img src={diceImage2} alt="Die 2" style={{ maxWidth: '50%', borderRadius: '8px' }} />
+                    <span className="font-semibold text-red-600 mt-2">{die2}</span>
+                </div>
+                <div className="flex justify-center items-center flex-col">
+                    <span className="font-semibold text-red-600">Total: {total}</span>
+                </div>
+            </div>
+        </div>
     );
 };
 
