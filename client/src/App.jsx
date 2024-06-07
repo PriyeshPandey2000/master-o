@@ -100,7 +100,7 @@ const App = () => {
 
     return (
         <div className="app-container">
-            <Container className="content-container mt-8">
+            <Container className="content-container mt-5">
                 <Typography variant="h4" gutterBottom className="game-title" style={{ color: 'purple' }}>7 Up 7 Down Game</Typography>
                 <PointsDisplay points={playerPoints} />
                 <div className="mt-8"></div>
