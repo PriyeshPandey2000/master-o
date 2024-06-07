@@ -12,6 +12,9 @@ app.use(cors({
 
 ));
 app.use(bodyParser.json());
+app.get('/', (req, res) => {
+    res.send('Welcome to the root path!');
+});
 app.use('/api/game', gameRoutes);
 
 app.listen(PORT, () => {
